@@ -8,6 +8,7 @@ gem 'rails', '3.0.7'
 gem 'pg'
 
 group :development do
+<<<<<<< HEAD
 	gem 'rspec-rails', '2.0.1'
 end
 
@@ -17,6 +18,16 @@ group :test do
 end
 
 
+=======
+    gem 'rspec-rails', '2.0.1'
+end
+
+group :test do
+    gem 'rspec', '2.0.1'
+    gem 'webrat', '0.7.1'
+end
+
+>>>>>>> 6e061d09748450e8382588fb48576c8c0b996e51
 # Use unicorn as the web server
 # gem 'unicorn'
 
