@@ -21,20 +21,15 @@ describe "LayoutLinks" do
     get '/help'
     response.should have_selector("title", :content => "Help")
   end
-  
-  it "should have a page at '/signup'"
+   
+  it "should have a page at '/signup'" do
     get 'signup'
-    response.should have_selector("title", :content => "Sign up")
+    response.should have_selector("title", :content => "Sign Up")
   end
   
-  it "should have a page at '/signin'"
+  it "should have a page at '/signin'" do
     get '/signin'
     response.should have_selector("title", :content => "Sign in")
-  
-  describe "GET /layout_links" do
-    it "works! (now write some real specs)" do
-      get layout_links_path
-    end
   end
 
 end

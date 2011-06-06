@@ -57,5 +57,18 @@ describe PagesController do
     get 'help'
     response.should have_selector("title",
                               :content => @base_title + " | Help")
-  end           
+  end
+    
+  describe "Get 'signin" do
+    it "should be successful" do
+      get 'signin'
+      response.should be_successful
+    end
+  end
+  
+  it "should have the right title" do
+    get 'signin'
+    response.should have_selector("title",
+                              :content => @base_title + " | Sign in")
+  end
 end
