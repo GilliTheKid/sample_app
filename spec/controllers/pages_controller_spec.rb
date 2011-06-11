@@ -61,7 +61,7 @@ describe PagesController do
     
   describe "Get 'signin" do
     it "should be successful" do
-      get :signin
+      get 'signin'
       response.should be_successful
     end
   end
